@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JELLYSEA</title>
+    <style>
+        body {color: white; background-image: url(./img/background3.png);
+            height: 100vh; width: 100vw; background-repeat : no-repeat; background-size: cover; position:relative;}
+        ul {display:flex; justify-content: space-between;
+            font-size: 20px; width:auto; list-style: none;}
+        li a{padding-right :70px; text-decoration: none; color: white;}
+        li:first-child {width: auto; padding-left: 47%;}
+        li:last-child {float: right;}
+        .button1 { height: 30px; position:absolute; bottom:8%; left:5%;}
+        .button2 { height: 30px; position:absolute; bottom:8%; right:5%;}
+        
+        .div1 {width: 20%; margin: 6% auto 0 auto; text-align: center;}
+        .div2, .div3, .div4, .div5
+        {border: 1px solid #ffffff; border-radius: 35px; width: 40%;
+        margin: 0 auto 1% auto; font-size: 14px; cursor: pointer;}
+        
+		.div2:hover {background: white;
+			color: black;
+			opacity:0.9;
+			transition: all 0.5s ease-out;}
+		.div3:hover {background: white;
+			color: black;
+			opacity:0.9;
+			transition: all 0.5s ease-out;}
+
+        .div4:hover {background: white;
+			color: black;
+			opacity:0.9;
+			transition: all 0.5s ease-out;}
+
+        .div5:hover {background: white;
+			color: black;
+			opacity:0.9;
+			transition: all 0.5s ease-out;}
+
+
+        .contents2, .contents3, .contents4, .contents5 {padding-left: 5%;}
+         
+        .plus {float:left ; margin: 2%;}
+        .e {border-bottom: 1px solid #ffffff;}
+
+        .image1_1 {position:absolute; top: 20%; left: -20px;}
+        .image1_2 {position:absolute; top: 60%; left: 3%;}
+        .image1_3 {position:absolute; top: 43%; left: 20%;}
+        .image1_4 {position:absolute; top: 55%; left: 25%;}
+        .image1_5 {position:absolute; top: 65%; right: 32%;}
+        .image1_6 {position:absolute; top: 72%; right: 28%;}
+        .image1_7 {position:absolute; top: 30%; right: 20%;}
+        .image1_8 {position:absolute; top: 48%; right: 22%;}
+        .image1_9 {position:absolute; top: 15%; right: 8%;}
+        .image1_10 {position:absolute; top: 33%; right: 5%;}
+        .image1_11 {position:absolute; top: 28%; right: 3%;}
+
+        
+        .image2_1 {position:absolute; top: 45%; left: 2%;}
+        .image2_2 {position:absolute; top: 45%; left: 2%;}
+        .image2_3 {position:absolute; top: 45%; left: 2%;}
+        .image2_4 {position:absolute; top: 45%; left: 2%;}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./JELLYSEA.html">JELLYSEA</a></li>
+            <li><a href="./JELLYSEA2.html">MENU</a></li>
+       </ul>
+    </nav>
+    <a href="./JELLYSEA3.html"><img src="./img/left.png" alt="next" class="button1"></a>
+    <a href="./JELLYSEA5.html"><img src="./img/right.png" alt="next" class="button2"></a>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@600&display=swap" rel="stylesheet">
+
+    <div class="div1" style="font-family: 'Noto Sans KR' !important;">
+        <h2>어떻게 생겼을까</h2>
+        <p class="e">What does it look like?</p>
+    </div>
+    <div class="div2">
+        <script type="text/javascript">function clickshow(elem,ID) {
+            var menu = document.getElementById(ID);
+            if (elem.className !='clickcontents2') {
+               elem.className = 'clickcontents2';
+               menu.style.display = "none";
+            } else {
+               elem.className ='opened';
+               menu.style.display ="block";
+           }}</script>
+        <div id="clickcontents2" onclick="clickshow(this,'contents2')">
+            <img src="./img/plus.png" alt="plus" class="plus">
+         <h2>젤리로 이루어져 있다</h2>
+         <p class="e2">Be made up of jelly</p>
+        </div>
+        <div id="contents2" style="display:none; padding: 0 5% 2% 8%;">
+            해파리의 몸은 96%가 물이며 염분 3% 유기물질 1%로 구성되어 있다. 우산은 젤리 성분이다.
+            쐐기세포가 밀집해 있는 촉수는 우산의 가장자리에 늘어져있고 항문 역할을 겸하는 입은
+            우산의 중심부 하부에 있는 섭식 통로 끝에 있다.
+        </div>
+    </div>
+    <div class="div3">
+        <script type="text/javascript">function clickshow(elem,ID) {
+            var menu = document.getElementById(ID);
+            if (elem.className !='clickcontents3') {
+               elem.className = 'clickcontents3';
+               menu.style.display = "none";
+            } else {
+               elem.className ='opened';
+               menu.style.display ="block";
+           }}</script>
+        <div id="clickcontents3" onclick="clickshow(this,'contents3')">
+            <img src="./img/plus.png" alt="plus" class="plus">
+        <h2>순환계가 없다</h2>
+        <p class="e2">Have no circulatory system</p></div>
+       <div id="contents3" style="display:none; padding: 0 5% 2% 8%;">
+        해파리는 분명한 소화 시스템과 삼투조절능력이 없고, 중추신경계와 호흡/혈관 순환계도 없다.
+        해파리는 위수관(渭水管; gastrovascullar cavity)의 벽을 통해 영양분을 흡수하는 것으로
+        영양섭취가 끝난다. 해파리가 호흡순환계를 필요로 하지 않는 것은 삼투조절이 안 되는 얇은
+        피부를 통해 해수의 산소가 저절로 몸에 확산되기 때문이다.
+       </div>
+    </div>
+    <div class="div4">
+        <script type="text/javascript">function clickshow(elem,ID) {
+            var menu = document.getElementById(ID);
+            if (elem.className !='clickcontents4') {
+               elem.className = 'clickcontents4';
+               menu.style.display = "none";
+            } else {
+               elem.className ='opened';
+               menu.style.display ="block";
+           }}</script>
+        <div id="clickcontents4" onclick="clickshow(this,'contents4')">
+            <img src="./img/plus.png" alt="plus" class="plus">
+        <h2>뇌가 없다</h2>
+        <p class="e2">Have no brain</p></div>
+       <div id="contents4" style="display:none; padding: 0 5% 2% 8%;">
+        뇌나 중추신경계를 가지고 있지 않지만 표피에 엉성한 신경망(nerve net)이 깔려있다
+         이 신경망을 통해 외부의 자극을 감지한다. 일부 해파리들은 안점(眼點; ocelli)을
+         갖고 있으며 이것으로 빛을 감지한다. 햇빛을 감지하여 위와 아래를 구별한다.
+         안점은 색소세포로 이루어져있으나 모두가 색소세포는 아니며 색 없는 세포도 포함되어 있다.
+       </div>
+    </div>
+    <div class="div5">
+        <script type="text/javascript">function clickshow(elem,ID) {
+            var menu = document.getElementById(ID);
+            if (elem.className !='clickcontents5') {
+               elem.className = 'clickcontents5';
+               menu.style.display = "none";
+            } else {
+               elem.className ='opened';
+               menu.style.display ="block";
+           }}</script>
+        <div id="clickcontents5" onclick="clickshow(this,'contents5')">
+            <img src="./img/plus.png" alt="plus" class="plus">
+        <h2>그래도 열심히 헤엄친다</h2>
+        <p class="e2">Still, he swims hard</p></div>
+       <div id="contents5" style="display:none; padding: 0 5% 2% 8%;">
+        해파리의 몸은 해수의 밀도와 비슷해서 가라앉지 않으며 가라앉지 않으려고
+        헤엄쳐야 하는 에너지가 필요하지 않다. 해파리는 스스로 움직이는 능력이
+        매우 제한적이지만 몸의 진로 방향은 의도대로 조정할 수 있다.
+        단순한 신경망이 우산 바닥에 있는 근육섬유를 리듬있게 축소 확장시키는데
+        수축시에 물을 우산 밖으로 밀어내면 전진하게 되는 식이다.
+        해류를 거슬러 헤엄치지는 못하지만 일반적으로 알려진 것 보다는 열심히 거의 모든 시간을 헤엄친다.
+       </div>
+    </div>
+    <!--<img src="./img/they/b1.png" class="image1_1">
+    <img src="./img/they/b1.png" class="image1_2">
+    <img src="./img/they/b1.png" class="image1_3">
+    <img src="./img/they/b1.png" class="image1_4">
+    <img src="./img/they/b1.png" class="image1_5">
+    <img src="./img/they/b1.png" class="image1_6">
+    <img src="./img/they/b1.png" class="image1_7">
+    <img src="./img/they/b1.png" class="image1_8">
+    <img src="./img/they/b1.png" class="image1_9">
+    <img src="./img/they/b1.png" class="image1_10">
+    <img src="./img/they/b1.png" class="image1_11">
+    <img src="./img/they/b2.png" class="image2_1">
+    <img src="./img/they/b2.png" class="image2_2">
+    <img src="./img/they/b2.png" class="image2_3">
+    <img src="./img/they/b2.png" class="image2_4">-->
+</body>
+</html>

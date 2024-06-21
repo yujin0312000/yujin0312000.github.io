@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JELLYSEA</title>
+    <style>
+        body {color: white; background-image: url(./img/background2.png);
+            height: 100vh; width: 100vw; background-repeat : no-repeat; background-size: cover; position:relative;}
+        ul {display:flex; justify-content: space-between;
+            font-size: 20px; width:auto; list-style: none;}
+        li a{padding-right :70px; text-decoration: none; color: white;}
+        li:first-child {width: auto; padding-left: 47%;}
+        li:last-child {float: right;}
+        .button1 { height: 30px; position:sticky; top:92%; left:5.5%;}
+        .button2 { height: 30px; position:sticky; top:92%; left:92.5%;}
+
+            
+        .wrap {display:flex; justify-content: center; margin-top: 5%;}
+        .wrap1 {width: 30%; margin-left: 3%; margin-left: 10%;}
+        .wrap2 {width: 25%;}
+        .wrap3 {width: 35%; float: right; font-size: 14px; margin-right: 10%;}
+        .div0 {padding-bottom: 7%;}
+        .clear {clear: both;}
+        
+        .imghere {width: 93%; height: 70%; margin: 10px;
+            background-image: url(./img/aequorea/Aequorea1.png);
+            background-repeat: no-repeat; background-size: cover;}
+        .imghere2 {width: 30%; height: 40%; float: right; margin-right: 25px;
+            background-image: url(./img/aequorea/Aequorea2.jpg);
+            background-repeat: no-repeat; background-size: cover;}
+        .imghere3 {width: 30%; height: 30%;
+            background-image: url(./img/aequorea/aequorea3.jpg);
+            background-repeat: no-repeat; background-size: cover;}
+        .imghere4 {width: 40%; height: 40%; position: relative; top: 50%; left: -32%;
+            background-image: url(./img/aequorea/Aequorea4.png);
+            background-repeat: no-repeat; background-size: cover;}
+        
+        .imghere, .imghere2, .imghere3, .imghere4 {
+            border: 0px solid black;
+        }
+
+        p {border-bottom: 1px solid #ffffff; margin-bottom: 7%;}
+        .B { padding-left: 10px;}
+		.B1:hover {
+			opacity:0.8;
+			transition: all 0.5s ease-out;}
+            
+        .bt {border: 1px solid white;
+            border-radius: 15%;
+            color: white;
+            background: transparent;}
+        .bt:hover {background: white;
+			color: black;
+			opacity:0.9;
+			transition: all 0.5s ease-out;}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./JELLYSEA.html">JELLYSEA</a></li>
+            <li><a href="./JELLYSEA2.html">MENU</a></li>
+       </ul>
+    </nav>
+    <div class="wrap">
+        <div class="wrap1">
+            <img class="imghere" id="imghere1"><br>
+            <div class="B">
+                <button  class="bt" style="cursor: pointer;" onclick="toggleImg1()" class="B1">image1</button>
+                <button  class="bt" style="cursor: pointer;" onclick="toggleImg2()" class="B1">image2</button>
+                <button  class="bt" style="cursor: pointer;" onclick="toggleImg3()" class="B1">image3</button>
+                <button  class="bt" style="cursor: pointer;" onclick="toggleImg4()" class="B1">image4</button>
+            </div>
+            <script>
+                function toggleImg1() {
+                  document.getElementById("imghere1").src ="./img/aequorea/Aequorea5.jpg";
+                }
+                function toggleImg2() {
+                  document.getElementById("imghere1").src ="./img/aequorea/Aequorea6.jpg";
+                }
+                function toggleImg3() {
+                  document.getElementById("imghere1").src ="./img/aequorea/Aequorea7.jpg";
+                }
+                function toggleImg4() {
+                  document.getElementById("imghere1").src ="./img/aequorea/Aequorea8.jpg";
+                }
+              </script>
+
+            <br>
+            <img class="imghere2">
+        </div>
+        <div class="wrap2">
+            <img class="imghere3">
+            <img class="imghere4">
+        </div>
+        <div class="wrap3">
+            <h2>빛을 낼 수 있다</h2>
+            <p>They emit light </p>
+            <div class="div0">
+                일본의 시모무라 오사무 박사는 1960년 조개류에서 발광물질을 분리하는 데 성공했다.
+                해파리의 발광 단백질도 더 연구하고 싶었던 시모무라 박사는 <br> 에쿼리아 빅토리아(Aequorea Victoria)
+                라는 해파리가 담겨있던 바닷물을 버리고 <br> 실험실 불을 끈 순간 개수대가 빛나는 것을 발견했다.
+                그리고 그는 해파리의 <br> 발광 단백질인 에쿠오린(Aequorin)과 에쿠오린이 내는 파란빛이나 자외선을
+                흡수해 <br> 녹색 형광빛을 내는 녹색형광단백질(Green Fluorescent Protein, GFP)을 분리하는데 <br> 성공했다.</div>
+            <div class="div0">
+                바다에서 빛을 내는건 해파리뿐만이 아니다. 야광충은 바다를 부유하다가 파도와 같이 <br> 물리적 자극을
+                받으면 푸른빛을 낸다. 세포질 속의 발광성 물질인 루시페린(Luciferin)과 <br> 발광효소인
+                루시페아라제(Luciferase) 때문이다.</div>
+            <div class="div0">
+                해양발광생물들은 포식자로부터 몸을 지키기 위해, 먹이를 유인하기 위해, <br> 서로 소통하기 위해
+                바닷속에서 빛을 낸다. 미국 몬터레이만 수족관 연구소(MBARI)에서 <br> 17년동안 무인 잠수정으로
+                35만건의 해양생물을 분석한 결과에 따르면 76%가 <br> 발광생물이었다고 한다. 생물이 스스로 빛을 내는
+                현상은 바다에서는 <br> 일반적인 현상이었다. 그러나 해파리의 에쿠오린과 야광충의 루시페린 반응과 같이<br>
+                그 원리가 밝혀진 발광생물은 극히 일부뿐이다.</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <a href="./JELLYSEA5.html"><img src="./img/left.png" alt="next" class="button1"></a>
+    <a href="./JELLYSEA8.html"><img src="./img/right.png" alt="next" class="button2"></a>
+</body>
+</html>

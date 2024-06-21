@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JELLYSEA</title>
+    <style>
+        body {color: white; background-image: url(./img/background2.png);
+            height: 100vh; width: 100vw; background-repeat : no-repeat; background-size: cover; position:relative;}
+        ul {display:flex; justify-content: space-between;
+            font-size: 20px; width:auto; list-style: none;}
+        li a{padding-right :70px; text-decoration: none; color: white;}
+        li:first-child {width: auto; padding-left: 47%;}
+        li:last-child {float: right;}
+        
+        .wrap{display:flex;/*가로로 배열*/
+        justify-content: space-between;/*좌우 양쪽 정렬*/
+        font-size: 14px; font-family: 'Noto Sans KR' !important; width: 80%;
+        margin: 0 auto;}
+        
+        .card0 {padding:20px; width:32%; height: 600px; border-radius: 20px;}
+        .card1, .card2{padding:20px; width:32%; height: 600px; border-radius: 20px; 
+              border: 1px solid #ffffff;}
+        .card0, .card1, .card2 {margin: 5% 4% 5% 4% ;}
+
+        .e {border-bottom: 1px solid #ffffff; margin-top: 0%;}
+        .button { height: 30px; position:absolute; bottom:8%; right:5%; z-index:5}
+        .button1 { height: 30px; position:absolute; bottom:8%; left:5%; z-index:4}
+
+        .wave1 {position:absolute; width: 120%; bottom: 0px; z-index:1}
+        .wave2 {position:absolute; width: 120%; bottom: 0px; z-index:2}
+        .wave3 {position:absolute; width: 120%; bottom: 0px; z-index:3}
+        .wave1 {
+            animation: motion1 3s linear 0s infinite alternate;}
+        @keyframes motion1 {
+            from {left: 0px;}
+            to {left: -120px}
+        }
+        .wave2 {
+            animation: motion3 2s linear 0s infinite alternate;}
+        @keyframes motion2 {
+            from {left: -120px;}
+            to {left: 0px}
+        }
+        .wave3 {
+            animation: motion3 3s linear 0s infinite alternate;}
+        @keyframes motion3 {
+            from {left: -120px;}
+            to {left: 0px}
+        }
+        .ship {position:absolute; width: 30%; top: 35%; left: -3%;
+               animation: motion4 3s linear 0s infinite alternate;}
+        @keyframes motion4 {
+            from {rotate: 2deg; top: 40%;}
+            to {rotate: -2deg;}
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./JELLYSEA.html">JELLYSEA</a></li>
+            <li><a href="./JELLYSEA2.html">MENU</a></li>
+       </ul>
+    </nav>
+    <a href="./JELLYSEA.html"><img src="./img/left.png" alt="next" class="button1"></a>
+    <a href="./JELLYSEA4.html"><img src="./img/right.png" alt="next" class="button"></a>
+    <img src="./img/they/wave-1.png" class="wave1">
+    <img src="./img/they/wave-2.png" class="wave2">
+    <img src="./img/they/wave-3.png" class="wave3">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@600&display=swap" rel="stylesheet">
+    <div class="wrap" style="font-family: 'Noto Sans KR' !important;">
+        <div class="card0">
+            <img src="./img/they/boat2.png" class="ship">
+        </div>
+        <div class="card1" >
+            <h2>해파리의 이름은...</h2>
+            <p class="e">The name of the jellyfish is...</p>
+            <p>옛 우리말로 해파리는 ‘ᄒᆡ파리’라고 했다. 자산어보(玆山魚譜)에서는 해팔어(海八魚)라는 이름을 찾을 수 있고,
+                해파리를 ‘수모’, ‘물알’이라 불렀다는 기록도 있다. 영명으로는 “jelly”가 들어간 단어와
+                “medusa”가 들어간 단어가 흔히 쓰이는데 학명체계에서는 젤리(jelly) 라는 말은 전혀 안 쓰이며
+                메두사(medusa)만 사용된다.</p><br>
+            <p>해파리는 물고기가 아님으로 영명 젤리피쉬(jellyfish)는 정확히 말하면 잘못 지어진 이름이다.
+                영어권 사람들도 jellyfish 대신 씨젤리(sea jelly) 또는 젤리스(jellies; jelly의 복수)를 사용하여
+                fish를 뺀다. 그러나 일반적으로 쓰이는 이름은 여전히 젤리피쉬이다.</p>
+        </div>
+        <div class="card2">
+            <h2>그룹을 나눈다</h2>
+            <p class="e">To divide into groups</p>
+            <p>해파리는 자포동물문(刺胞動物門; Phylum Cnidaria)의 여러 동물 그룹(Class;강/綱)들 중에서 부유해 다니는
+                몇 그룹을 묶어서 부르는 이름이다. 해파리류로 묶어지는 세 가지 그룹은 다음과 같다.</p>
+            <a link="">해파리강(Class Scyphozoan)</a>
+            <a link="">히드라충강(Class Hydrozoa)</a>
+            <a link="">상자해파리강(또는 입방해파리강)(Class Cubozoa)</a>
+            <p>해파리는 아니지만 몸이 반투명하면서 부유해 다니기 때문에 해파리처럼 보이는 것들도 넓은 의미에서 모두
+                해파리류라고 하기도 한다. 콩보다 작은 것부터 지름이 2m 이상에 이르기까지 종류가 다양한데,
+                네 개의 목과 약 200여종이 여기에 속한다. 전 세계 바다에서 출현하며 성체 몸의 94~98%는 물로 이루어져 있다.</p>
+        </div>
+    </div>
+</body>
+</html>

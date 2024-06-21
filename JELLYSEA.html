@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>JELLYSEA</title>
+    <style>
+        body {color: white; background-image: url(./img/background1.png);
+            height: 100vh; width: 100vw; background-repeat : no-repeat; background-size: cover;}
+        ul {display:flex; justify-content: space-between;
+            font-size: 20px; width:auto; list-style: none;}
+        li a{padding-right :70px; text-decoration: none; color: white;}
+        li:first-child {width: auto; padding-left: 47%;}
+        li:last-child {float: right;}
+/* font-size: 60px;*/
+        .empty1 {padding-top: 20%;}
+        
+        .container {
+            display: flex;
+        }
+        .div1 {width: 40%; padding: 0 0 10px 50px;
+            font-family: 'Archivo Black' !important; font-size: 5vw;}
+        .div2 {padding-top: 12%; max-width: 560px; font-size: 14px;
+            font-family: 'Noto Sans KR' !important;}
+        .button1 {padding-right: 5px;}
+        /*버튼 마우스 호버하면 반전되어 보이게 넣기
+        구글 폰트 적용하는 방법 https://imweb.me/faq?mode=view&category=29&category2=38&idx=71695
+        기말에 도메인 무료 서버(깃허브 등) 이용하여 제출하면 5점 제공
+        여름 맞춤 영화 추천?
+        기쿠지로의 여름/괴물(일본영화)*/
+        body {
+      opacity: 1;
+      transition-duration: 1s;
+      transition-property: opacity;
+    }
+
+    body.fade {
+      opacity: 0;
+    }
+
+    div {
+      font-size: 100px;
+      font-weight: bold;
+    }
+    </style>
+</head>
+<body class="fade">
+    <script>
+    document.body.classList.add('fade');
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      window.setTimeout(() => {
+        document.body.classList.remove('fade');
+      });
+    });
+  </script>
+    <nav>
+        <ul>
+            <li><a href="./JELLYSEA.html">JELLYSEA</a></li>
+            <li><a href="./JELLYSEA2.html">MENU</a></li>
+       </ul>
+    </nav>
+    <div class="empty1"></div>
+    <div class="container">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+       <div class="div1">
+        <span style="font-family: 'Archivo Black' !important;">JELLYFISH<br>FLOATING<br>IN THE SEA</span>
+       </div>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@600&display=swap" rel="stylesheet">
+       <div class="div2"><br>
+        <span style="font-family: 'Noto Sans KR' !important;">둥실둥실, 유유자적, 여유롭게 헤엄치는 매력적인 존재인 해파리. 투명하고 둥근
+               몸체에 기다란 다리가 여럿 달려있다니. 소란스럽고 어지러운 세상에서 벗어나 바닷속을
+               해파리처럼 천천히 떠다니고싶은 마음을 숨길 수가 없다. 잠자리에 드는 순간만이라도
+               그런 기분을 느껴보자...</span><br><br>
+           <a href="./JELLYSEA13.html"><img src="./img/button.png" alt="button1" class="button1"></a>
+           <a href="./JELLYSEA3.html"><img src="./img/button2.png" alt="button2" class="button2"></a>
+       </div>
+    </div>
+</body>
+</html>

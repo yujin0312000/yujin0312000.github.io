@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JELLYSEA</title>
+    <style>
+        ul {display:flex; justify-content: space-between;
+            font-size: 20px; width:auto; list-style: none;}
+        li a{padding-right :70px; text-decoration: none; color: white;}
+        li:first-child {width: auto; padding-left: 47%;}
+        li:last-child {float: right;}
+        .button2 { height: 30px; position:sticky; top:92%; left:92.5%; z-index: 1;}
+
+        .bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;}
+        .bg-video__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;}
+        .div1 {width: 60%; padding: 0 0 0 50px; color: white;
+            font-family: 'Archivo Black' !important; font-size: 5vw;}
+
+        .S1 {padding: 30px 0 0 55px; height: 40px; color: white;}
+        .B, .B-hover {padding-top: 0%;}
+
+        .B-box img.B-hover{display: none;}
+        .B-box:hover img.B{display: none;}
+        .B-box:hover img.B-hover{display: block;}
+        .button1 { height: 30px; position:sticky; top:92%; left:92.5%;}
+
+        #audio {position:absolute; top:69%; left:15%; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./JELLYSEA.html">JELLYSEA</a></li>
+            <li><a href="./JELLYSEA2.html">MENU</a></li>
+       </ul>
+    </nav>
+    <div class="bg-video">
+        <video id="bg-video__content" class="bg-video__content" autoplay muted loop>
+            <source src="./img/video/video2-1.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+   <div class="div1">
+    <span style="font-family: 'Archivo Black' !important;">
+        LISTEN TO<br>THE SOUND<br>OF TREES<br>AND THE WIND</span>
+   </div>
+   <div class="S1">
+     <p>the sound of water</p>
+     <div class="B-box" style="cursor: pointer;" onclick="toggleImg1()">
+        <img class="B" src="./img/버튼3.png">
+        <img src="img/버튼4.png" class="B-hover"> </div>
+   </div>
+   <div class="S1">
+    <p>the sound of water</p>
+     <div class="B-box" style="cursor: pointer;" onclick="toggleImg2()">
+        <img class="B" src="./img/버튼3.png">
+        <img src="img/버튼4.png" class="B-hover"> </div>
+   </div>
+   <div class="S1">
+    <p>the sound of water</p>
+     <div class="B-box" style="cursor: pointer;" onclick="toggleImg3()">
+        <img class="B" src="./img/버튼3.png">
+        <img src="img/버튼4.png" class="B-hover"> </div>
+   </div>
+   <div class="S1">
+    <p>the sound of water</p>
+     <div class="B-box" style="cursor: pointer;" onclick="toggleImg4()">
+        <img class="B" src="./img/버튼3.png">
+        <img src="img/버튼4.png" class="B-hover"> </div>
+   </div>
+   <audio id="audio" controls loop autoplay disableRemotePlayback src="./img/audio/audio1.mp3"></audio>
+   <script>
+    function toggleImg1() {
+      document.getElementById("bg-video__content").src = "./img/video/video2-4.mp4"
+      document.getElementById("audio").src = "./img/audio/audio6.mp3";
+    }
+    function toggleImg2() {
+      document.getElementById("bg-video__content").src = "./img/video/video2-2.mp4"
+      document.getElementById("audio").src = "./img/audio/audio7.mp3";
+    }
+    function toggleImg3() {
+      document.getElementById("bg-video__content").src = "./img/video/video2-5.mp4"
+      document.getElementById("audio").src = "./img/audio/audio8.mp3";
+    }
+    function toggleImg4() {
+      document.getElementById("bg-video__content").src = "./img/video/video2-3.mp4"
+      document.getElementById("audio").src = "./img/audio/audio9.mp3";
+    }
+   </script>
+
+    <a href="./JELLYSEA13.html"><img src="./img/left.png" alt="next" class="button1"></a>
+</body>
+</html>
